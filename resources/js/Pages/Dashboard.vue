@@ -8,8 +8,8 @@ onMounted(() => {
     const user = usePage().props.auth.user
     //@ts-ignore
     window.Echo.private(`App.Models.User.${user.id}`)
-        .listen('ReverbExampleEvent', (e:any) => {
-           alert('Reverb 🚀')
+        .listen('SoketiExampleEvent', (e:any) => {
+           alert('Soketi 🚀')
         })
 
 });
